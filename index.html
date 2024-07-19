@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreeJAL - Free Water for Everyone</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
             color: #333;
+            background: #f4f4f4;
         }
         header {
-            background-color: #87ceeb;
+            background: #87ceeb;
             color: #fff;
             padding: 20px;
             text-align: center;
             border-bottom: 5px solid #000080;
+            position: relative;
+        }
+        header .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
         }
         header h1 {
             margin: 0;
@@ -33,11 +40,6 @@
             display: block;
             color: #000080;
             font-weight: bold;
-        }
-        .logo {
-            width: 120px;
-            height: auto;
-            margin-bottom: 20px;
         }
         .container {
             width: 90%;
@@ -80,6 +82,15 @@
             bottom: 0;
             width: 100%;
             margin-top: 20px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+            .logo {
+                width: 100px;
+            }
         }
     </style>
 </head>
