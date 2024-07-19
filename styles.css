@@ -118,6 +118,18 @@ a:hover {
     text-decoration: underline;
 }
 
+.service-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.service-images img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -142,5 +154,12 @@ footer {
     }
     .hero p {
         font-size: 20px;
+    }
+    .service-images {
+        flex-direction: column;
+    }
+    .service-images img {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
